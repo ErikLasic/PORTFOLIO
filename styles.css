@@ -2033,6 +2033,15 @@ section {
         gap: 1rem;
         text-align: center;
     }
+    
+    /* Scroll down button mobile */
+    .scroll-down-btn {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -2053,5 +2062,14 @@ section {
         width: 45px;
         height: 45px;
         font-size: 1.1rem;
+    }
+    
+    /* Scroll down button small mobile */
+    .scroll-down-btn {
+        bottom: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
     }
 }

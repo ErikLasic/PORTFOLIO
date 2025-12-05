@@ -251,8 +251,8 @@ window.addEventListener('scroll', () => {
 const scrollDownBtn = document.getElementById('scrollDownBtn');
 const allSections = Array.from(document.querySelectorAll('section'));
 
-// Scroll to next section on click
-scrollDownBtn.addEventListener('click', () => {
+// Function to scroll to next section
+function scrollToNextSection() {
     const scrollPosition = window.scrollY + 150; // Add offset for navbar
     
     // Find the next section
@@ -278,6 +278,15 @@ scrollDownBtn.addEventListener('click', () => {
         top: nextSection.offsetTop - 80,
         behavior: 'smooth'
     });
+}
+
+// Click event for desktop
+scrollDownBtn.addEventListener('click', scrollToNextSection);
+
+// Touch event for mobile - prevent double trigger
+scrollDownBtn.addEventListener('touchend', (e) => {
+    e.preventDefault();
+    scrollToNextSection();
 });
 
 // Hide button when at footer/bottom
@@ -291,7 +300,7 @@ window.addEventListener('scroll', () => {
     } else {
         scrollDownBtn.classList.remove('hidden');
     }
-});
+}, { passive: true }); // Passive for better scroll performance on mobile
 
 // ========================================
 // Console Easter Egg
