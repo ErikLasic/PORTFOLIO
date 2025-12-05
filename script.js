@@ -246,6 +246,54 @@ window.addEventListener('scroll', () => {
 });
 
 // ========================================
+// Floating Scroll Down Button
+// ========================================
+const scrollDownBtn = document.getElementById('scrollDownBtn');
+const allSections = Array.from(document.querySelectorAll('section'));
+
+// Scroll to next section on click
+scrollDownBtn.addEventListener('click', () => {
+    const scrollPosition = window.scrollY + 150; // Add offset for navbar
+    
+    // Find the next section
+    let nextSection = null;
+    for (const section of allSections) {
+        if (section.offsetTop > scrollPosition) {
+            nextSection = section;
+            break;
+        }
+    }
+    
+    // If no next section found (at the bottom), scroll to top
+    if (!nextSection) {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+        return;
+    }
+    
+    // Scroll to next section
+    window.scrollTo({
+        top: nextSection.offsetTop - 80,
+        behavior: 'smooth'
+    });
+});
+
+// Hide button when at footer/bottom
+window.addEventListener('scroll', () => {
+    const footer = document.querySelector('.footer');
+    const footerTop = footer.offsetTop;
+    const windowBottom = window.scrollY + window.innerHeight;
+    
+    if (windowBottom >= footerTop - 100) {
+        scrollDownBtn.classList.add('hidden');
+    } else {
+        scrollDownBtn.classList.remove('hidden');
+    }
+});
+
+// ========================================
 // Console Easter Egg
 // ========================================
 console.log('%c👋 Hello there!', 'font-size: 20px; font-weight: bold; color: #4a5568;');
