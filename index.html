@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erik Lašič | Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="code-rain"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">EL</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="btn-close"></span>
+                        <span class="btn-minimize"></span>
+                        <span class="btn-maximize"></span>
+                    </div>
+                    <span class="terminal-title">erik@portfolio:~</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="command">whoami</span>
+                    </p>
+                    <h1 class="glitch" data-text="Erik Lašič">Erik Lašič</h1>
+                    <p class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="command">cat role.txt</span>
+                    </p>
+                    <p class="typing-text">
+                        <span class="role-text">Full-Stack Developer</span>
+                        <span class="cursor">|</span>
+                    </p>
+                    <p class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="command">echo $LOCATION</span>
+                    </p>
+                    <p class="location">
+                        <i class="fas fa-map-marker-alt"></i> Maribor, Slovenia
+                    </p>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-terminal"></i> Get In Touch
+                </a>
+                <a href="#skills" class="btn btn-secondary">
+                    <i class="fas fa-code"></i> View Skills
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-decoration">//</span> About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Education</h3>
+                    <p>Currently pursuing Master's Degree in Informatics and Data Technology at FERI, University of Maribor</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Developer</h3>
+                    <p>Passionate about building web applications with modern technologies like Angular, Node.js, and Python</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Team Player</h3>
+                    <p>Strong communication and teamwork skills developed through diverse work experiences and collaborations</p>
+                </div>
+            </div>
+            <div class="about-description">
+                <div class="code-block">
+                    <pre><code><span class="keyword">const</span> <span class="variable">erik</span> = {
+    <span class="property">name</span>: <span class="string">"Erik Lašič"</span>,
+    <span class="property">born</span>: <span class="string">"09/03/2001"</span>,
+    <span class="property">nationality</span>: <span class="string">"Slovenian"</span>,
+    <span class="property">languages</span>: [<span class="string">"Slovenian"</span>, <span class="string">"English (C2)"</span>],
+    <span class="property">passion</span>: <span class="string">"Building innovative solutions"</span>,
+    <span class="property">traits</span>: [
+        <span class="string">"Problem-solver"</span>,
+        <span class="string">"Adaptable"</span>,
+        <span class="string">"Professional"</span>
+    ]
+};</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-decoration">//</span> Tech Stack
+            </h2>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-palette"></i> Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Angular">
+                            <i class="fab fa-angular"></i>
+                            <span>Angular</span>
+                        </div>
+                        <div class="skill-item" data-skill="JavaScript">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item" data-skill="CSS">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-item" data-skill="HTML">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Backend -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Node.js">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item" data-skill="Express">
+                            <i class="fas fa-cube"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-item" data-skill="Python">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item" data-skill="Java">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Database -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Database</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="MongoDB">
+                            <i class="fas fa-leaf"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item" data-skill="MySQL">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Others -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Other</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Git">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item" data-skill="GitHub">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item" data-skill="Docker">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item" data-skill="JSON">
+                            <i class="fas fa-brackets-curly"></i>
+                            <span>JSON</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="C">
+                            <i class="fas fa-copyright"></i>
+                            <span>C</span>
+                        </div>
+                        <div class="skill-item" data-skill="C#">
+                            <i class="fas fa-hashtag"></i>
+                            <span>C#</span>
+                        </div>
+                        <div class="skill-item" data-skill="C++">
+                            <i class="fas fa-plus"></i>
+                            <span>C++</span>
+                        </div>
+                        <div class="skill-item" data-skill="Kotlin">
+                            <i class="fas fa-k"></i>
+                            <span>Kotlin</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-mobile-alt"></i> Mobile</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Android">
+                            <i class="fab fa-android"></i>
+                            <span>Android Studio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-decoration">//</span> Education
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">02/2024 - Present</div>
+                        <h3>Master's Degree in Informatics and Data Technology</h3>
+                        <h4>Faculty of Electrical Engineering and Computer Science, University of Maribor</h4>
+                        <p class="location-tag">
+                            <i class="fas fa-map-marker-alt"></i> Maribor, Slovenia
+                        </p>
+                        <a href="https://feri.um.si/en/" target="_blank" class="edu-link">
+                            <i class="fas fa-external-link-alt"></i> Visit FERI
+                        </a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">10/2020 - 02/2024</div>
+                        <h3>Bachelor's Degree in Computer Science and Information Technologies</h3>
+                        <h4>Faculty of Electrical Engineering and Computer Science, University of Maribor</h4>
+                        <p class="location-tag">
+                            <i class="fas fa-map-marker-alt"></i> Maribor, Slovenia
+                        </p>
+                        <div class="edu-highlights">
+                            <h5>Key Achievements:</h5>
+                            <ul>
+                                <li>Gained proficiency in multiple programming languages including Python, Java, C++, C#, HTML, JavaScript, and CSS</li>
+                                <li>Worked on diverse programming projects and assignments</li>
+                                <li>Deepened understanding of system software and critical components</li>
+                            </ul>
+                        </div>
+                        <a href="https://feri.um.si/en/" target="_blank" class="edu-link">
+                            <i class="fas fa-external-link-alt"></i> Visit FERI
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-decoration">//</span> Get In Touch
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="btn-close"></span>
+                                <span class="btn-minimize"></span>
+                                <span class="btn-maximize"></span>
+                            </div>
+                            <span class="terminal-title">contact.sh</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p class="terminal-line">
+                                <span class="prompt">$</span>
+                                <span class="command">cat contact_info.json</span>
+                            </p>
+                            <pre class="contact-json">{
+    <span class="property">"email"</span>: <span class="string">"lasic.erik@gmail.com"</span>,
+    <span class="property">"phone"</span>: <span class="string">"(+386) 070799277"</span>,
+    <span class="property">"location"</span>: <span class="string">"Starše, Slovenia"</span>
+}</pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:lasic.erik@gmail.com" class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email Me</span>
+                    </a>
+                    <a href="tel:+38670799277" class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <span>Call Me</span>
+                    </a>
+                    <a href="https://github.com/" target="_blank" class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">
+                    <span class="code-comment">// Built with</span> 
+                    <i class="fas fa-heart"></i> 
+                    <span class="code-comment">by Erik Lašič © 2025</span>
+                </p>
+                <div class="footer-links">
+                    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
