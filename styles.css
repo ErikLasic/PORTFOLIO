@@ -720,6 +720,22 @@ ul {
     color: var(--primary);
 }
 
+.btn-pdf {
+    background: linear-gradient(135deg, #6b9080, #5a6c7d);
+    color: white;
+    border: none;
+}
+
+.btn-pdf:hover {
+    background: linear-gradient(135deg, #5a7969, #4a5c6d);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-pdf i {
+    font-size: 1rem;
+}
+
 /* Social Buttons - Instagram Reel Style with Tooltip */
 .hero-social,
 .social-buttons {
